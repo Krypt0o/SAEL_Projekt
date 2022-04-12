@@ -1,55 +1,70 @@
-#nav {
-    background-color: rgba(86, 255, 156, 0.548);
-    float: right;
-    width: 8%;
-    margin-right: 0.5%;
-    padding: 15px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-#Projekt {
-    vertical-align: top;
-    background: rgba(156, 255, 197, 0.3);
-    display: inline-block;    
-    padding: 2%;
-    width: 35%;
-    margin: 0 auto;
-    padding: 15px;
-    box-sizing: border-box;
-}
-#Amazonas_Bild {
-    max-width: 11cm;
-    height: auto;
-}
-#Finning_Bild {
-    max-width: 11cm;
-    height: auto;
-}
-#Projekte {
-    padding: 7%;
-    text-align: center;
-    width: 85%;  
-}
 body{
-    background-color: rgb(255, 254, 189);
+    background-color: rgb(255, 255, 255);
     color: black;
 }
-#Finning_Text {
+p{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
+    font-size: xx-large;
 }
-#Amazonas_Text {
+h2 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+.nav-container{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204,.7);
+    border-radius: 12px;
+    height: 65px;
+    margin: 35px;
+}
+.Projekte{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Amazonas-Bild{
+    max-width: 80%;
+    height: auto;
+    border-radius: 17px;
+
+}
+.Finning-Bild{
+    max-width: 95%;
+    height: auto;  
+    border-radius: 17px;
+
+}
+.Finning{
+    width: 45%;
+    height: auto;
+    background-color: rgb(228, 228, 228,.8);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.Amazonas{
+    width: 45%;
+    height: auto;
+    background-color: rgb(228, 228, 228,.8);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.dark-mode {
+    background-color: rgb(41, 41, 41);
+    color: rgb(0, 0, 0); 
 }
 
-.dark-mode {
-    background-color: black;
-    color: white;    
-  }
 .switch {
 position: relative;
 display: inline-block;
@@ -70,7 +85,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background-color: #ccc;
+background-color: rgb(107, 107, 107);
 -webkit-transition: .4s;
 transition: .4s;
 }
@@ -114,20 +129,141 @@ border-radius: 50%;
     justify-content: left;
     align-items: left;
     height: 3px;  
+}
+.Darkmode{
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    padding: 10px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;    
   }
-#Design_Text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-}
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-}
-#Banner{
-    margin-top: 60px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;
+}
+.FAQ{
+    background-color: #04aa6d;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    height: 17px;
+
+}
+.About{
+    background-color: rgb(4, 170, 109);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    height: 17px;
+}
+.Login{
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    height: 17px;
+
+}
+.Spenden{
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    border-radius: 34px;
+}
+.Abouttext{
+    display: flex;
+    width: 95%;
+    height: auto;
+    background-color: rgb(228, 228, 228,.8);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 35px;
+    justify-content: center;
+    flex-direction: column;
+}
+.FAQtext{
+    display: flex;
+    width: 95%;
+    height: auto;
+    background-color: rgb(228, 228, 228,.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 35px;
+    flex-direction: column;
+}
+.loginform{    
+    width: 15%;
+    height: auto;
+    background-color: rgb(228, 228, 228,.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+
+}
+#Username{
+    border-radius: 37px;
+    width: 90%;
+    height: 35%;
+    text-align: center;
+    font-size: large;
+}
+#Password{
+    border-radius: 37px;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    font-size: large;
 }

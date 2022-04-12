@@ -1,9 +1,53 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="de">
     <head>
-        <link rel="stylesheet" href="stylessheet.css">
+        <script>
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            }
+        </script>
+        <article class="nav-container">
+            <section class="FAQ">
+                    <a href="Homepage.html" class="FAQ">Homepage</a>
+            </section>
+            <section class="Projekte">
+                <div class="dropdown">
+                    <button class="dropbtn">Projekte</button>
+                    <div class="dropdown-content">
+                    <a href="Spenden Projekt 1.html">Stop Finning</a>
+                    <a href="Spenden Projekt 2.html">Der Amazonas Brennt</a>
+                    </div>
+                </div>
+            </section>   
+            <section class="About">
+                    <a href="About.html" class="About">Über Uns</a>
+            </section>
+            <section class="Login">
+                    <a href="Login.html" class="Login">Einloggen</a>
+            </section>
+            <section class="Darkmode">
+                <div>
+                <label class="switch">
+                    <input type="checkbox" onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label>
+                <label class="Darkmode">Dunkles Design</label>
+                </div>
+            </section>
+        </article>
+        <title>Login | Spendenportal</title>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        
+        <div class="loginform">
+            <form action="Login.php" method="post">
+                <label for="Username" id="loginname">Username:</label><br>
+                <input type="text" id="Username" name="Username" placeholder="Username"><br><br>
+                <label for="Passwort" id="Passwort">Passwort:</label><br>
+                <input type="password" id="Password" name="Passwort" placeholder="Passwort"><br><br>
+                <input id="Loginbutton" type="submit" value="Login"><br>
+            </form>
+        </div>
     </body>
 </html>

@@ -1,71 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
     <head>
-        <link rel="stylesheet" href="stylesheet.css">
-        <title>Homepage</title>
+        <link rel="stylesheet" href="Stylesheet.css">
+        <title>Homepage | Spendenportal</title>
         <script>
             function myFunction() {
             var element = document.body;
             element.classList.toggle("dark-mode");
             }
-            </script>
+        </script>
+        <article class="nav-container">
+            <section class="FAQ">
+                    <a href="FAQ.html" class="FAQ">FAQ!</a>
+            </section>
+            <section class="Projekte">
+                <div class="dropdown">
+                    <button class="dropbtn">Projekte</button>
+                    <div class="dropdown-content">
+                    <a href="Spenden Projekt 1.html">Stop Finning</a>
+                    <a href="Spenden Projekt 2.html">Der Amazonas Brennt</a>
+                    </div>
+                </div>
+            </section>   
+            <section class="About">
+                    <a href="About.html" class="About">Über Uns</a>
+            </section>
+            <section class="Login">
+                    <a href="Login.html" class="Login">Einloggen</a>
+            </section>
+            <section class="Darkmode">
+                <div>
+                <label class="switch">
+                    <input type="checkbox" onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label>
+                <label class="Darkmode">Dunkles Design</label>
+                </div>
+            </section>
+        </article>
     </head>
-    <body>
-        <div id="nav">
-            <a href="FAQ.html">FAQ!</a>
-        </div>
-
-        <div id="nav">
-            <a href="Projekte.html">Projekte</a>
-        </div>
-
-        <div id="nav">
-            <a href="About.html">Über Uns</a>
-        </div>
-
-        <div id="nav">
-            <a href="Login.html">Einloggen</a>
-        </div>
-
-        <div>
-        <label class="switch">
-            <input type="checkbox" onclick="myFunction()">
-            <span class="slider round"></span>
-        </label>
-        <div class="Design_Text">
-            <a>Dark Mode</a>
-        </div>
-        </div>
-        
-        <div id="Banner">
-        <img id="Banner" src="\\bechtle.net\user\userdata\marvin.bauer\myFiles\Documents\SAEL Projekt\Bilder\nachhaltig.jpg">
-        </div>
-        
-        <div id="Projekte">
-            <div id="Projekt">
+    <body>        
+        <article class="Projekte">
+            <section class="Finning">
                 <h1>Stop Finning</h1>
-                <img id="Finning_Bild" src="\\bechtle.net\user\userdata\marvin.bauer\myFiles\Documents\SAEL Projekt\Bilder\StopFinning.jpg" alt="Proejkt 1">
+                <img class="Finning-Bild" src="\StopFinning.jpg" alt="Projekt 1">
                 <h2>Über Uns</h2>
-                <a id="Finning_Text">Jede Minute werden hunderte Haie durch Menschenhand getötet. 
+                <p id="Finning_Text">
+                    Jede Minute werden hunderte Haie durch Menschenhand getötet. 
                     Jährlich sterben in unseren Weltmeeren etwa 63 bis 273 Millionen.
                     Die genauen Zahlen bleiben Spekulation, da es an verlässlichen Daten fehlt und die Dunkelziffer durch illegalen Fang extrem hoch ist. 
-                    Dabei sorgen Haie für ein intaktes marines Ökosystem und werden deshalb häufig als die weißen Blutkörperchen der Meere bezeichnet.</a>
-                    <br><br>
-                    <button id="Button_Spende1" href="Spenden Projekt 1.html">Zum Projekt</button>
-                </div>
-            
-                <div id="Projekt">
+                    Dabei sorgen Haie für ein intaktes marines Ökosystem und werden deshalb häufig als die weißen Blutkörperchen der Meere bezeichnet.
+                </p>
+                <br><br>
+                <a class="Spenden" href="Spenden Projekt 1.html">Jetzt Spenden!</a>
+            </section>
+            <section class="Amazonas">
                 <h1>Der Amazonas Brennt</h1>
-                <img id="Amazonas_Bild" src="\\bechtle.net\user\userdata\marvin.bauer\myFiles\Documents\SAEL Projekt\Bilder\Amazonas.jpg" alt="Projekt 2">
+                <img class="Amazonas-Bild" src="\Amazonas.jpg" alt="Projekt 2">
                 <h2>Über Uns</h2>
-                <a id="Amazonas_Text">Die Abholzung im Amazonas ist weiter auf Rekordniveau – 
+                <p id="Amazonas_Text">
+                    Die Abholzung im Amazonas ist weiter auf Rekordniveau – 
                     zwischen August 2019 und Juli 2020 wurden 11.088 Quadratkilometer Regenwald vernichtet.  
                     Im Vergleich zum Vorjahr hat die Zerstörung der Regenwälder um 9,5 Prozent zugenommen. 
                     Eine Entwicklung mit dramatischen Folgen: Schon bald könnte es kein Zurück mehr geben und aus dem fruchtbaren Wald eine Savanne werden. 
-                    Mit fatalen Folgen für Mensch und Natur. Verschwindet der riesige Kohlenstoffspeicher, ist die Klimakrise nicht mehr aufzuhalten.</a>
+                    Mit fatalen Folgen für Mensch und Natur. Verschwindet der riesige Kohlenstoffspeicher, ist die Klimakrise nicht mehr aufzuhalten.
+                </p>
                     <br><br>
-                    <button id="Button_Spende2" href="Spenden Projekt 2.html">Zum Projekt</button>
-            </div>
-        </div>
+                    <a class="Spenden" href="Spenden Projekt 2.html">Jetzt Spenden!</a>
+            </section>
+        </article>
     </body>
 </html>

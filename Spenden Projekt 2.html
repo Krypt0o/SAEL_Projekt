@@ -1,9 +1,43 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="de">
     <head>
-        <link rel="stylesheet" href="stylessheet.css">
+        <script>
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            }
+        </script>
+
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Der Amazonas Brennt | Spendenportal</title>
     </head>
     <body>
-        
-    </body>
-</html>
+        <article class="nav-container">
+            <section class="FAQ">
+                    <a href="FAQ.html" class="FAQ">FAQ!</a>
+            </section>
+            <section class="Projekte">
+                <div class="dropdown">
+                    <button class="dropbtn">Projekte</button>
+                    <div class="dropdown-content">
+                    <a href="Spenden Projekt 1.html">Stop Finning</a>
+                    <a href="Spenden Projekt 2.html">Der Amazonas Brennt</a>
+                    </div>
+                </div>
+            </section>   
+            <section class="About">
+                    <a href="Homepage.html" class="About">Homepage</a>
+            </section>
+            <section class="Login">
+                    <a href="Login.html" class="Login">Einloggen</a>
+            </section>
+            <section class="Darkmode">
+                <div>
+                <label class="switch">
+                    <input type="checkbox" onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label>
+                <label class="Darkmode">Dunkles Design</label>
+                </div>
+            </section>
+        </article>
