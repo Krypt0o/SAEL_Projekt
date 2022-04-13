@@ -186,6 +186,7 @@ border-radius: 50%;
     border: none;
     text-decoration: none;
     height: 17px;
+    width: fit-content;
 
 }
 .About{
@@ -196,6 +197,8 @@ border-radius: 50%;
     border: none;
     text-decoration: none;
     height: 17px;
+    width: fit-content;
+
 }
 .Login{
     background-color: #04aa6d;
@@ -205,6 +208,7 @@ border-radius: 50%;
     border: none;
     text-decoration: none;
     height: 17px;
+    width: fit-content;
 
 }
 .Spenden{
@@ -221,7 +225,7 @@ border-radius: 50%;
     display: flex;
     height: auto;
     background-color: rgb(228, 228, 228,.8);
-    padding: 10px;
+    padding: 25px;
     text-align: center;
     border-radius: 10px;
     margin: 35px;
