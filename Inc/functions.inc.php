@@ -128,6 +128,7 @@ function AdminView($conn){
                     <th>User ID</th>
                     <th>Username</th>
                     <th>Email</th>
+                    <th>User Typ</th>
                 </tr>
                 <tr>
                     <td>'
@@ -139,17 +140,28 @@ function AdminView($conn){
                     <td>'
                         . $row["usersEmail"],
                     '</td>
-                </tr>';
-    
-    
-    
-    echo "</table>";
+                    <td>'
+                        . $row["usersType"],
+                    '</td>
+                    <td>
+                    <form method="POST" action="Inc/del.inc.php">
+                        <input type="submit" name="submit" value="Benuter Löschen">
+                        <input type="hidden" name="del" value="'.$row["usersName"],'"
+                    </td>
+                </tr>',
+            "</table>";
 }
 
 function delUser($conn, $Username){
-    $sql = "DELETE FROM users WHERE usersName = '?';";
+    $sql = "DELETE FROM users WHERE usersName = ?;";
     $stmt = mysqli_stmt_init($conn);
-    mysqli_stmt_bind_param($stmt, "s", $Username);
-    mysqli_stmt_prepare($stmt, $sql);
-    mysqli_stmt_execute($stmt);
-}
+    if(!mysqli_stmt_prepare($stmt, $sql)){
+        header("location: ../register.php?error=stmtfailed");
+        exit();
+       }    
+       mysqli_stmt_bind_param($stmt, "s", $Username);
+       mysqli_stmt_execute($stmt);
+       mysqli_stmt_close($stmt);
+       header("location: ../AdminPanel.php?error=none");
+       exit();
+   }
