@@ -4,11 +4,11 @@ include_once 'header.php';
     <body>
         <div class="loginform">
             <form action="Inc/login.inc.php" method="post">
-                <label for="Username" id="loginname">Username:</label><br>
+                <label id="loginname">Username:</label><br>
                 <input type="text" id="Username" name="Username" placeholder="Username" required><br><br>
-                <label for="Passwort" id="Passwort">Passwort:</label><br>
-                <input type="password" id="Password" name="uid" placeholder="Passwort" required><br><br>
-                <input id="Loginbutton" type="submit" value="Login"><br>
+                <label id="Passwort">Passwort:</label><br>
+                <input type="password" id="Password" name="Passwort" placeholder="Passwort" required><br><br>
+                <input name="submit" id="Loginbutton" type="submit" value="Login"><br>
             </form>
             <a href="register.php">Hier Registrieren</a>
             <?php

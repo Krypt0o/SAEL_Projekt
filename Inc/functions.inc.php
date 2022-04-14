@@ -76,6 +76,7 @@ function createUser($conn, $Email, $Username, $pwd) {
     exit();
 
  }
+
 function loginUser($conn, $Username, $pwd){
     $uidExists = uidExists($conn, $Username, $Username);
 
@@ -97,8 +98,36 @@ function loginUser($conn, $Username, $pwd){
         session_start();
         $_SESSION["userid"] = $uidExists["usersID"];
         $_SESSION["username"] = $uidExists["usersName"];
-        header("location: ../Homepage.php");
-        exit();
+        isAdmin($conn, $Username);
 
     }
+}
+
+function isAdmin($conn, $Username){
+    if($Username === "Admin"){
+        header("Location: ../AdminPanel.php?error=none");
+        exit();
+        $_SESSION["root"] = "root";
+    }
+    else{
+        header("location: ../Homepage.php");
+        exit();
+    }
+}
+
+function AdminView($conn){
+    $sql = "SELECT * FROM users;";
+    $stmt = mysqli_stmt_init($conn);
+    mysqli_stmt_prepare($stmt, $sql);
+    mysqli_stmt_execute($stmt);
+    $resultdata = mysqli_stmt_get_result($stmt);
+    while($row = mysqli_fetch_array($resultdata))
+    {
+    echo "<tr>";
+    echo "<td>" . $row['usersName'] . "</td>";
+    echo "<td>" . $row['usersEmail'] . "</td>";
+    echo "</tr>";
+    }
+    echo "</table>";
+
 }

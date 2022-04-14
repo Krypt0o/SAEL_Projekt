@@ -26,10 +26,7 @@ include_once 'header.php';
                         echo "<p>Die Passwörter stimmen nicht überein</p>";
                     }
                     else if($_GET["error"] == "usernametaken"){
-                        echo "<p>Die E-Mail oder das Username wird bereits verwendet</p>";
-                    }
-                    else if($_GET["error"] == "none"){
-                        echo "<p>Registriert! Jetzt nur noch anmelden</p>";
+                        echo "<p>Die E-Mail oder der Username wird bereits verwendet</p>";
                     }
                 }
             ?>

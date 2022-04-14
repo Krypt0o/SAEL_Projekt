@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="de">
     <head>
@@ -32,9 +36,16 @@
             <section class="About">
                     <a href="About.php" class="About">Über Uns</a>
             </section>
-            <section class="Login">
-                    <a href="Profil.php" class="Login">Profil</a>
-            </section>
+            <?php
+                if (isset($_SESSION["username"])){
+                    echo "<a href='Profil.php' class='Login'>Profil</a>";
+                    echo "<a href='Inc/logout.inc.php' class='Login'>Abmelden</a>";
+                }
+                else{
+                    echo "<a href='register.php' class='Login'>Registrieren</a>";
+                    echo "<a href='login.php' class='Login'>Anmelden</a>";
+                }
+            ?>
             <section class="Darkmode">
                 <div>
                 <label class="switch">
