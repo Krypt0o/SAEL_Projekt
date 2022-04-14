@@ -14,7 +14,7 @@ include_once 'header.php';
                     Dabei sorgen Haie für ein intaktes marines Ökosystem und werden deshalb häufig als die weißen Blutkörperchen der Meere bezeichnet.
                 </p>
                 <br><br>
-                <a class="Spenden" href="Spenden Projekt 1.html">Jetzt Spenden!</a>
+                <a class="Spenden" href="Spenden Projekt 1.php">Jetzt Spenden!</a>
             </section>
             <section class="Amazonas">
                 <h1>Der Amazonas Brennt</h1>
@@ -28,7 +28,7 @@ include_once 'header.php';
                     Mit fatalen Folgen für Mensch und Natur. Verschwindet der riesige Kohlenstoffspeicher, ist die Klimakrise nicht mehr aufzuhalten.
                 </p>
                     <br><br>
-                    <a class="Spenden" href="Spenden Projekt 2.html">Jetzt Spenden!</a>
+                    <a class="Spenden" href="Spenden Projekt 2.php">Jetzt Spenden!</a>
             </section>
         </article>
     </body>

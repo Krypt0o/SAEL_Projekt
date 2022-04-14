@@ -104,10 +104,11 @@ function loginUser($conn, $Username, $pwd){
 }
 
 function isAdmin($conn, $Username){
-    if($Username === "Admin"){
+    $uidExists = uidExists($conn, $Username, $Username);
+    if($uidExists["usersType"] === 'admin'){
+        $_SESSION["root"] = "root";
         header("Location: ../AdminPanel.php?error=none");
         exit();
-        $_SESSION["root"] = "root";
     }
     else{
         header("location: ../Homepage.php");
@@ -121,13 +122,34 @@ function AdminView($conn){
     mysqli_stmt_prepare($stmt, $sql);
     mysqli_stmt_execute($stmt);
     $resultdata = mysqli_stmt_get_result($stmt);
-    while($row = mysqli_fetch_array($resultdata))
-    {
-    echo "<tr>";
-    echo "<td>" . $row['usersName'] . "</td>";
-    echo "<td>" . $row['usersEmail'] . "</td>";
-    echo "</tr>";
-    }
+    while ($row = mysqli_fetch_assoc($resultdata))
+        echo '<table class="admintable">
+                <tr>
+                    <th>User ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>'
+                        . $row['usersID'],
+                    '</td>
+                    <td>'
+                        . $row['usersName'],
+                    '</td>
+                    <td>'
+                        . $row["usersEmail"],
+                    '</td>
+                </tr>';
+    
+    
+    
     echo "</table>";
+}
 
+function delUser($conn, $Username){
+    $sql = "DELETE FROM users WHERE usersName = '?';";
+    $stmt = mysqli_stmt_init($conn);
+    mysqli_stmt_bind_param($stmt, "s", $Username);
+    mysqli_stmt_prepare($stmt, $sql);
+    mysqli_stmt_execute($stmt);
 }
