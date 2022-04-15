@@ -37,9 +37,6 @@
                     <a href="About.php" class="About">Über Uns</a>
             </section>
             <?php
-                if(isset($_SESSION["root"])){
-                    echo "<a href='AdminPanel.php' class='Login'>Admin Oberfläche</a>";
-                }
                 if (isset($_SESSION["username"])){
                     echo "<a href='Profil.php' class='Login'>Profil</a>";
                     echo "<a href='Inc/logout.inc.php' class='Login'>Abmelden</a>";
@@ -48,6 +45,10 @@
                     echo "<a href='register.php' class='Login'>Registrieren</a>";
                     echo "<a href='login.php' class='Login'>Anmelden</a>";
                 }
+                if(isset($_SESSION["root"])){
+                    echo "<a href='AdminPanel.php' class='Login'>Admin Oberfläche</a>";
+                }
+
             ?>
             <section class="Darkmode">
                 <div>

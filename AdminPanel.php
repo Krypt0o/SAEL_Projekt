@@ -16,7 +16,7 @@ else{
     <title>Admin | Spendenportal</title>
 </head>
 <body>
-    <h1>Hallo Admin, dies sind die derzeit angelegten User:</h1>
+    <h1 class="FAQtext">Hallo Admin, dies sind die derzeit angelegten User:</h1>
     <?php
     AdminView($conn);
     ?>

@@ -305,3 +305,42 @@ h3{
     width: fit-content;
     justify-content: end;
 }
+.Profile{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    background-color: rgb(228, 228, 228,.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 35px;
+    height: 100px;
+    width: 90%;
+}
+.delform{
+    background-color: #d81919;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    height: 17px;
+    width: fit-content;
+}
+.pfsection{
+    display: flex;
+    background-color: rgb(228, 228, 228,.8);
+    padding: 10px;
+    border-radius: 10px;
+    height: 690px;
+    width: 45%;
+}
+.Profil{
+    display: flex;
+    justify-content: start;
+    font-size: larger;
+}
+.Profil2{
+    display: flex;
+    justify-content: end;
+    font-size: larger;
+
+}
