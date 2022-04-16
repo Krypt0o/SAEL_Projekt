@@ -1,13 +1,17 @@
 <?php
+//alles was in header.php gescpeichert ist wird hier inkludiert so muss der head nicht auf jeder seite immer geschrieben sein
 include_once 'header.php';
 ?>
 <body>
+    
         <article class="Abouttext">
             <section>
+        <!--Überschrift für das Projekt-->
                 <h1>
                     Stop Finning!
                 </h1>
             </section>
+            <!--Bild für das Projekt-->
             <img class="Projekt_Bild_2" src="Bilder/StopFinning.jpg" >
             <section>
                 <h2>
@@ -16,6 +20,7 @@ include_once 'header.php';
             </section>
             <section>
                 <p>
+                    <!--Beschreibung des Projekts-->
                     <h3>Jede Minute werden hunderte Haie durch Menschenhand getötet.</h3>Jährlich sterben in unseren Weltmeeren etwa 63 bis 273 Millionen.[1] Die genauen Zahlen bleiben Spekulation, da es an verlässlichen Daten fehlt und die Dunkelziffer durch illegalen Fang extrem hoch ist. Dabei sorgen Haie für ein intaktes marines Ökosystem und werden deshalb häufig als die weißen Blutkörperchen der Meere bezeichnet.<br><br>
 
                     <h3>Gejagt werden Haie besonders wegen ihrer Flossen.</h3>Diese werden vor allem im asiatischen Raum als Haiflossensuppe verzehrt. Für diese vermeintliche Delikatesse werden bis zu 90 EUR verlangt.[2] Und das obwohl die Flosse selbst nach nichts schmeckt, häufig durch Quecksilberbelastung sogar giftig ist und keinen nachgewiesenen Ernährungsnutzen hat. Dennoch hat sich der Handel mit Haiflossen zu einem lukrativen Geschäftsmodell entwickelt, das sich nur aufgrund der hochpreisigen Flossen rechnet.<br><br>
@@ -38,7 +43,7 @@ include_once 'header.php';
                 </p>
             </section>
             <br><br>
-            <section>
+            <section><!--Weiterleitung auf eine Website auf der man für das Projekt Spenden kann-->
                 <a href="https://www.betterplace.org/de/projects/89012-stop-finning-stop-the-trade" class="FAQ">Hier Spenden</a>
             </section>
         </article>

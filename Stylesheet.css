@@ -1,11 +1,12 @@
+/*Body farben werden fesgelegt*/
 body{
     background-color: rgb(255, 255, 255);
     color: black;
 }
-p{
+p{/*paragraph schriftart wird festgelegt*/
     font-family: Arial, Helvetica, sans-serif;
 }
-h1{
+h1{/*aussehen für h1 und h2 werden festgelegt*/
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
     font-size: xx-large;
@@ -14,7 +15,7 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
 }
-.nav-container{
+.nav-container{/*größe der navigation wird festgelegt*/
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
@@ -25,12 +26,12 @@ h2 {
     height: 13%;
     margin: 35px;
 }
-.Projekte{
+.Projekte{/*anordnung der Projekte auf der Homepage wird festgelegt*/
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.Amazonas-Bild{
+.Amazonas-Bild{/*größe und border radius(abgegrundete ecken) werden angepasst*/
     max-width: 80%;
     height: auto;
     border-radius: 17px;
@@ -42,7 +43,7 @@ h2 {
     border-radius: 17px;
 
 }
-.Finning{
+.Finning{/*größe und padding der Finning Section wird angepasst*/
     width: 45%;
     height: auto;
     background-color: rgb(228, 228, 228,.8);
@@ -51,7 +52,7 @@ h2 {
     border-radius: 10px;
 
 }
-.Amazonas{
+.Amazonas{/*größe und padding der Amazonas Section wird angepasst*/
     width: 45%;
     height: auto;
     background-color: rgb(228, 228, 228,.8);
@@ -60,12 +61,12 @@ h2 {
     border-radius: 10px;
 
 }
-.dark-mode {
+.dark-mode {/*dies class wird getoggled bei klick auf darkmode*/
     background-color: rgb(41, 41, 41);
     color: rgb(0, 0, 0); 
 }
 
-.switch {
+.switch {/*aussehen des Kreis in der Darkmode Checkbox*/
 position: relative;
 display: inline-block;
 width: 60px;
@@ -102,7 +103,7 @@ background-color: white;
 transition: .4s;
 }
 
-input:checked + .slider {
+input:checked + .slider {/*wenn darkmode aktiviert ist ist der hintergrund der Checkbox blau*/
 background-color: #2196F3;
 }
 
@@ -124,7 +125,7 @@ border-radius: 34px;
 border-radius: 50%;
 }
 
-.Design_Text {
+.Design_Text {/*class für den Text unter der Checkbox*/
     display: flex;
     justify-content: left;
     align-items: left;
@@ -178,7 +179,7 @@ border-radius: 50%;
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;
 }
-.FAQ{
+.FAQ{/*Aussehen des FAQ Buttons in der NAV leiste*/
     background-color: #04aa6d;
     color: rgb(255, 255, 255);
     padding: 16px;
@@ -189,7 +190,7 @@ border-radius: 50%;
     width: fit-content;
 
 }
-.About{
+.About{/*Aussehen des About Buttons in der NAV leiste*/
     background-color: #04aa6d;
     color: white;
     padding: 16px;
@@ -200,7 +201,7 @@ border-radius: 50%;
     width: fit-content;
 
 }
-.Login{
+.Login{/*Aussehen des Login Buttons in der NAV leiste*/
     background-color: #04aa6d;
     color: white;
     padding: 16px;
@@ -211,7 +212,7 @@ border-radius: 50%;
     width: fit-content;
 
 }
-.Spenden{
+.Spenden{/*Aussehen des Spenden Buttons unter den Proejekten auf der Homepage und auf den Spenden seiten*/
     font-size: 16px;
     padding: 16px;
     border: none;
@@ -221,7 +222,7 @@ border-radius: 50%;
     font-weight: 550;
     border-radius: 34px;
 }
-.Abouttext{
+.Abouttext{/*Aussehen des Texts auf der About seute*/
     display: flex;
     height: auto;
     background-color: rgb(228, 228, 228,.8);
@@ -232,7 +233,7 @@ border-radius: 50%;
     justify-content: center;
     flex-direction: column;
 }
-.FAQtext{
+.FAQtext{/*Aussehen des Texts auf der FAQ seute*/
     display: flex;
     height: auto;
     background-color: rgb(228, 228, 228,.8);
@@ -241,7 +242,7 @@ border-radius: 50%;
     margin: 35px;
     flex-direction: column;
 }
-.loginform{    
+.loginform{/*Aussehen des des Loginforms*/
     width: 15%;
     height: auto;
     background-color: rgb(228, 228, 228,.8);
@@ -255,7 +256,7 @@ border-radius: 50%;
     font-size: x-large;
 
 }
-#Username{
+#Username{/*Aussehen des Eingabefelds auf login und register seite (abgerundete eingabefelder und mittig schriebender text*/
     border-radius: 37px;
     width: 90%;
     height: 35%;
@@ -269,22 +270,22 @@ border-radius: 50%;
     text-align: center;
     font-size: large;
 }
-.homeicon{
+.homeicon{/*Anapssung des Haus Icons in der NAV leiste*/
     max-width: 70px;
 }
-h3{
+h3{/*Anpassung für h3*/
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
-.Projekt_Bild_2{
+.Projekt_Bild_2{/*Anpassung der Bilder auf den Projekt seiten*/
     display: flex;
     justify-content: center;
     width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
-.admintable{
+.admintable{/*Anpassung für das Admin Panel damit es dem aussehen vom rest der seite folgt*/
     display: flex;
     height: auto;
     background-color: rgb(228, 228, 228,.8);
@@ -293,7 +294,7 @@ h3{
     margin: 35px;
     flex-direction: column;
 }
-.del{
+.del{/*anpassung des Löschen Buttons auf der Profil seite*/
     display: flex;
     background-color: #ff0000;
     color: white;

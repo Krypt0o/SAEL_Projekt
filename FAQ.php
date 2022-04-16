@@ -1,19 +1,20 @@
 <?php
+//alles was in header.php gescpeichert ist wird hier inkludiert so muss der head nicht auf jeder seite immer geschrieben sein
 include_once 'header.php';
 ?>
     <body>
         <article class="FAQtext">
-            <section>
+            <section><!--Überschrift-->
                 <h1>
                     Wie können wir dir helfen?
                 </h1>
             </section>
             <section>
-                <h2>
+                <h2><!--Überschrift-->
                     Allgemein
                 </h2>
             </section>
-            <section>
+            <section><!--Liste zur Aufzähling für FAQs Allgemein-->
                 <ul>
                     <li>
                         <p><a href="Hier fehlt der Link noch">Wie kann ich spenden sammeln?</a></p>
@@ -26,7 +27,7 @@ include_once 'header.php';
                     </li>
                 </ul>
             </section>
-            <section>
+            <section><!--Liste zur Aufzähling für FAQs für Spender-->
                 <h2>
                     Spender
                 </h2>
@@ -44,7 +45,7 @@ include_once 'header.php';
                     </li>
                 </ul>
             </section>
-            <section>
+            <section><!--Liste zur Aufzähling für FAQs für Projekte-->
                 <h2>
                     Projekte
                 </h2>

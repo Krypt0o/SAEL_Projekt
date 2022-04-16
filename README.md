@@ -4,3 +4,8 @@
 14.04.2022 Amelden und Registrieren Läuft einwandfrei heute versuche ich das AdminPanel zu machen auf dem man alle in der Datenbank angelegten User sieht und Löschen kann morgen verusche ich das normale User Profil zu machen und am Samstag mach ich die Dokumentation
 
 Du kümmerst dich um die FAQ seiten wenigstens
+
+15.04.2022
+FAQ sollte bis heute fertig sein
+Um was soll ich mich noch kümmern ?
+Musste vorgestern mein PC zurücksetzen...

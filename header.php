@@ -1,4 +1,5 @@
 <?php
+//hier wird eine Session gestartet damit der User auch auf Jeder Homepage seite eingeloggt ist
     session_start();
 ?>
 
@@ -9,14 +10,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script>
+            //function zum Togglen des Darkmodes
             function myFunction() {
             var element = document.body;
             element.classList.toggle("dark-mode");
             }
         </script>
-
         <link rel="stylesheet" href="stylesheet.css">
-        <title>About | Spendenportal</title>
+        <title>SAEL | Spendenportal</title>
+        <!--Article zum abgrenzen der Navigations Leiste im head-->
         <article class="nav-container">
             <section class="homeicon">
                 <a href="Homepage.php"><img src="Bilder/hausicon.png" class="homeicon"></a>
@@ -36,6 +38,8 @@
             <section class="About">
                     <a href="About.php" class="About">Über Uns</a>
             </section>
+        <!--Code um die Navigationsleiste anzupassen jenachdem ob niemand, ein User oder ein Admin angemeldet ist-->
+
             <?php
                 if (isset($_SESSION["username"])){
                     echo "<a href='Profil.php' class='Login'>Profil</a>";
@@ -50,6 +54,8 @@
                 }
 
             ?>
+        <!--Section für die eigntliche Checkbox für den Darkmode mit der man interagieren kann-->
+
             <section class="Darkmode">
                 <div>
                 <label class="switch">
