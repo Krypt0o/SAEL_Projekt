@@ -1,11 +1,11 @@
 # SAEL_Projekt
-13.04.2022 Es muss alles per Xamp eingebunden werden damit die PHP seiten auch richtig funktionieren Ich habe eine paar sachen gemacht damit wir den head komplett auslagern können so brauchen wir den Head nich in jeder Datei immer wieder Ich habe die bestehenden Seiten auf Flex Box umgebaut ist ja midestanforderung und macht alles ein bisschen leichter Das Anmelden und Registrieren werd ich heute noch machen
+Hallo Herr Röther da das Exportieren unserer Datenbank aufgrund des Bugs von phpMyAdmin mit der neuen php version nicht funktionert sind hier die SQL Befehle um die Datenbank zu erstellen
 
-14.04.2022 Amelden und Registrieren Läuft einwandfrei heute versuche ich das AdminPanel zu machen auf dem man alle in der Datenbank angelegten User sieht und Löschen kann morgen verusche ich das normale User Profil zu machen und am Samstag mach ich die Dokumentation
+WICHTIG:
+Die Datenbank muss den Namen "sae_projekt" haben damit alles funktioniert
 
-Du kümmerst dich um die FAQ seiten wenigstens
+CREATE TABLE `sae_projekt1`.`users` ( `usersID` INT(11) NOT NULL AUTO_INCREMENT , `usersName` VARCHAR(128) NOT NULL , `usersEmail` VARCHAR(128) NOT NULL , `usersPwd` VARCHAR(128) NOT NULL , `usersType` VARCHAR(128) NOT NULL DEFAULT 'user' , PRIMARY KEY (`usersID`)) ENGINE = InnoDB;
 
-15.04.2022
-FAQ sollte bis heute fertig sein
-Um was soll ich mich noch kümmern ?
-Musste vorgestern mein PC zurücksetzen...
+Danach muss über die Website über das Registrierungsformular ein neuer User angelegt werden.
+
+Und als Letztes muss händisch in der Datenbank über phpMyAmdin der usersType auf "admin" geändert werden
