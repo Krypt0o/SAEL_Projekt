@@ -1,11 +1,13 @@
 <?php
 include_once 'header.php';
+//alles was in header.php gescpeichert ist wird hier inkludiert so muss der head nicht auf jeder seite immer geschrieben sein + Funktionen aus functions.inc.php können abgerufen werden
 ?>
     <body>
         <article class="Abouttext">
             <section>
                 <h1>Über Uns:</h1>
             </section>
+            <!--Text Über die Entwickler der Seite-->
             <section>
                 <p style="font-size: larger;">
                     Dieses Spendeportal ist eine Hilfswebsite für Projekte die auf Speden angewiesen sind.<br>
